@@ -15,7 +15,8 @@ public class Main {
             arrayList.add(new Integer(i));
         }
         System.out.println(arrayList);
-        Sorting<Integer> sort = new BubbleSort<>();
-        System.out.println(sort.sort(arrayList));
+        Sorting<Integer> sorting = new BubbleSort<>();
+        sorting.sort(arrayList);
+        System.out.println(arrayList);
     }
 }

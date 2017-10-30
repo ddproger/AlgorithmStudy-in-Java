@@ -7,5 +7,5 @@ import java.util.List;
  * Created by gerasymiuk on 30.10.17.
  */
 public interface Sorting<T extends Comparable> {
-    List<T> sort(List<T> list);
+    void sort(List<T> list);
 }
