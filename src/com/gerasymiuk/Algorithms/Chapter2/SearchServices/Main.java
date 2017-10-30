@@ -1,5 +1,4 @@
-import com.gerasymiuk.Algorithms.Chapter2.SearchServices.BinarySearch;
-import com.gerasymiuk.Algorithms.Chapter2.SearchServices.LinearSearch;
+package com.gerasymiuk.Algorithms.Chapter2.SearchServices;
 
 import java.util.TreeSet;
 
