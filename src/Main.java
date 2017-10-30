@@ -9,13 +9,13 @@ import java.util.TreeSet;
 public class Main {
     public static void main(String[] args) {
         TreeSet<Integer> treeSet = new TreeSet<>();
-        for (int i = 0; i < 50; i+=2) {
+        for (int i = 0; i < 100; i+=2) {
             treeSet.add(new Integer(i));
         }
         System.out.println("Collection: ");
         System.out.println(treeSet.toString());
-        System.out.println(new LinearSearch<>(treeSet).getIndex(51));
-        System.out.println(new BinarySearch<>(treeSet).getIndex(0));
+        System.out.println(new LinearSearch<>(treeSet).getIndex(12));
+        System.out.println(new BinarySearch<>(treeSet).getIndex(12));
 
     }
 }
