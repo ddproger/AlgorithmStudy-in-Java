@@ -13,7 +13,7 @@ public class LinearSearch<T> {
     public int getIndex(T value){
         int index=0;
         for (T item: collection) {
-            if(item.equals(value))return index;
+            if(item.equals(value))return index-1;
             index++;
         }
         return -1;
