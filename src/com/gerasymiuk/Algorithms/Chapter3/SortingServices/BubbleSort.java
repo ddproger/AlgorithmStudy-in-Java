@@ -17,16 +17,6 @@ public class BubbleSort<T extends Comparable> implements Sorting<T>{
                 if(compareResult>0) swap(array,j,j+1);
             }
         }
-            list.clear();
-            for (int i = 0; i < size; i++) {
-                list.add((T)array[i]);
-            }
-
-    }
-    private void swap(Comparable[] array, int i, int i1) {
-        Comparable temp;
-        temp = array[i1];
-        array[i1]=array[i];
-        array[i]=temp;
+        listFromArray(list,(T[])array);
     }
 }
