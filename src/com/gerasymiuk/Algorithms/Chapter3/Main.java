@@ -1,9 +1,6 @@
 package com.gerasymiuk.Algorithms.Chapter3;
 
-import com.gerasymiuk.Algorithms.Chapter3.SortingServices.BubbleSort;
-import com.gerasymiuk.Algorithms.Chapter3.SortingServices.InsertionSort;
-import com.gerasymiuk.Algorithms.Chapter3.SortingServices.SelectionSorting;
-import com.gerasymiuk.Algorithms.Chapter3.SortingServices.Sorting;
+import com.gerasymiuk.Algorithms.Chapter3.SortingServices.*;
 
 import java.util.*;
 
@@ -13,13 +10,17 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         List<Integer> arrayList = new LinkedList<>();
-        for (int i = 0; i < 25; i++) {
+        for (int i = 25; i >= 0; i--) {
             arrayList.add(new Integer(i));
-            arrayList.add(new Integer(i));
+            //arrayList.add(new Integer(i));
         }
-        Sorting<Integer> sorting = new SelectionSorting<>(true);
-        sorting.sort(arrayList);
         System.out.println("Input Array\n"+arrayList);
+        Sorting<Integer> sorting = new MergeSort<>();
+        sorting.sort(arrayList);
+        System.out.println("Sorting with MergeSort\n"+arrayList);
+        sorting = new SelectionSorting<>(true);
+        sorting.sort(arrayList);
+        System.out.println("Revers sorting with Selection Sorting\n"+arrayList);
         sorting = new BubbleSort<>();
         sorting.sort(arrayList);
         System.out.println("Sorted by Bubble Sorting Array\n"+arrayList);
