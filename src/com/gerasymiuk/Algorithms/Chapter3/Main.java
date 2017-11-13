@@ -15,9 +15,9 @@ public class Main {
             //arrayList.add(new Integer(i));
         }
         System.out.println("Input Array\n"+arrayList);
-        Sorting<Integer> sorting = new MergeSort<>();
+        Sorting<Integer> sorting = new ShellSort<>();
         sorting.sort(arrayList);
-        System.out.println("Sorting with MergeSort\n"+arrayList);
+        System.out.println("Sorting with ShellSort\n"+arrayList);
         sorting = new SelectionSorting<>(true);
         sorting.sort(arrayList);
         System.out.println("Revers sorting with Selection Sorting\n"+arrayList);
@@ -31,5 +31,11 @@ public class Main {
         sorting = new InsertionSort<>(50);
         sorting.sort(arrayList);
         System.out.println("Sorted by Insertion Sorting Array\n"+arrayList);
+
+        sorting = new SelectionSorting<>(true);
+        sorting.sort(arrayList);
+        System.out.println("Revers sorting with Selection Sorting\n"+arrayList);
+
+
     }
 }
